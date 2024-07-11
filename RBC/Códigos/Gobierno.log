@@ -1,0 +1,173 @@
+Starting Dynare (version 6.1).
+Calling Dynare with arguments: none
+Starting preprocessing of the model file ... 
+Found 10 equation(s). 
+Evaluating expressions... 
+Computing static model derivatives (order 1). 
+Normalizing the static model... 
+Finding the optimal block decomposition of the static model... 
+5 block(s) found: 
+  4 recursive block(s) and 1 simultaneous block(s). 
+  the largest simultaneous block has 5 equation(s) 
+                                 and 5 feedback variable(s). 
+Computing dynamic model derivatives (order 1). 
+Normalizing the dynamic model... 
+Finding the optimal block decomposition of the dynamic model... 
+5 block(s) found: 
+  4 recursive block(s) and 1 simultaneous block(s). 
+  the largest simultaneous block has 5 equation(s) 
+                                 and 5 feedback variable(s). 
+Preprocessing completed. 
+Preprocessing time: 0h00m00s.
+dynare_solve: starting value results in nonfinite/NaN value. Randomize initial guess...
+
+STEADY-STATE RESULTS:
+
+c             		 0.762486
+w             		 2.37057
+r             		 0.035101
+y             		 1.32125
+h             		 0.356707
+k             		 13.5505
+i             		 0.338764
+z             		 0.999998
+g             		 0.22
+productividad 		 3.70402
+
+MODEL SUMMARY
+
+  Number of variables:         10
+  Number of stochastic shocks: 2
+  Number of state variables:   3
+  Number of jumpers:           2
+  Number of static variables:  5
+
+
+MATRIX OF COVARIANCE OF EXOGENOUS SHOCKS
+Variables       eps_z     eps_g
+eps_z        0.000049  0.000000
+eps_g        0.000000  0.000441
+
+POLICY AND TRANSITION FUNCTIONS
+                                   log(c)               log(w)               log(r)               log(y)               log(h)               log(k)               log(i)               log(z)               log(g)   log(productividad)
+Constant                        -0.271159             0.863142            -3.349525             0.278587            -1.030842             2.606461            -1.082418                    0            -1.514167             1.309429
+log(k(-1))                       0.629698             0.466169            -0.828744             0.171256            -0.294913             0.956266            -0.749370                    0                    0             0.466169
+log(z(-1))                       0.462623             0.758140             1.291084             1.291084             0.532944             0.099853             3.994130             0.950000                    0             0.758140
+log(g(-1))                      -0.104042            -0.040957             0.072812             0.072812             0.113769            -0.002631            -0.105250                    0             0.960000            -0.040957
+eps_z                            0.486971             0.798042             1.359036             1.359036             0.560994             0.105109             4.204347             1.000000                    0             0.798042
+eps_g                           -0.108377            -0.042663             0.075846             0.075846             0.118510            -0.002741            -0.109635                    0             1.000000            -0.042663
+
+
+MOMENTS OF SIMULATED VARIABLES (HP filter, lambda = 1600)
+VARIABLE                        MEAN       STD. DEV.        VARIANCE        SKEWNESS        KURTOSIS
+log(c)                     -0.284001        0.006223        0.000039       -0.642506        0.228108
+log(w)                      0.847598        0.007792        0.000061       -0.297619       -0.537572
+log(r)                     -3.349468        0.012540        0.000157       -0.057344       -0.775469
+log(y)                      0.258170        0.012272        0.000151       -0.126316       -0.915323
+log(h)                     -1.035716        0.005684        0.000032       -0.258523       -0.516944
+log(k)                      2.585962        0.003736        0.000014       -0.726855       -0.506949
+log(i)                     -1.103872        0.038740        0.001501       -0.052354       -0.864534
+log(z)                     -0.009928        0.009100        0.000083       -0.107760       -0.879012
+log(g)                     -1.559246        0.025893        0.000670        0.080379       -0.340001
+log(productividad)          1.293885        0.007792        0.000061       -0.297619       -0.537572
+
+
+CORRELATION OF SIMULATED VARIABLES (HP filter, lambda = 1600)
+VARIABLE                          c              w              r              y              h              k              i              z              g  productividad
+log(c)                       1.0000         0.9230         0.5795         0.7284         0.3074         0.6424         0.7943         0.7932        -0.5896         0.9230
+log(w)                       0.9230         1.0000         0.8343         0.9360         0.6500         0.5142         0.9520         0.9619        -0.2978         1.0000
+log(r)                       0.5795         0.8343         1.0000         0.9552         0.9185         0.0340         0.9546         0.9533         0.0368         0.8343
+log(y)                       0.7284         0.9360         0.9552         1.0000         0.8759         0.3278         0.9682         0.9868         0.0091         0.9360
+log(h)                       0.3074         0.6500         0.9185         0.8759         1.0000         0.0029         0.7853         0.8118         0.4278         0.6500
+log(k)                       0.6424         0.5142         0.0340         0.3278         0.0029         1.0000         0.2360         0.2986        -0.1457         0.5142
+log(i)                       0.7943         0.9520         0.9546         0.9682         0.7853         0.2360         1.0000         0.9952        -0.2096         0.9520
+log(z)                       0.7932         0.9619         0.9533         0.9868         0.8118         0.2986         0.9952         1.0000        -0.1449         0.9619
+log(g)                      -0.5896        -0.2978         0.0368         0.0091         0.4278        -0.1457        -0.2096        -0.1449         1.0000        -0.2978
+log(productividad)           0.9230         1.0000         0.8343         0.9360         0.6500         0.5142         0.9520         0.9619        -0.2978         1.0000
+
+
+AUTOCORRELATION OF SIMULATED VARIABLES (HP filter, lambda = 1600)
+VARIABLE                    1        2        3        4        5
+log(c)                 0.7957   0.5972   0.4334   0.2558   0.1036
+log(w)                 0.7415   0.4920   0.3195   0.1601   0.0433
+log(r)                 0.6794   0.3656   0.1696   0.0170  -0.0883
+log(y)                 0.6904   0.3872   0.1956   0.0467  -0.0535
+log(h)                 0.6641   0.3250   0.1087  -0.0440  -0.1613
+log(k)                 0.9543   0.8671   0.7473   0.6098   0.4690
+log(i)                 0.6954   0.4053   0.2201   0.0615  -0.0468
+log(z)                 0.6963   0.4043   0.2181   0.0629  -0.0423
+log(g)                 0.7084   0.4257   0.2097   0.0149  -0.1706
+log(productividad)     0.7415   0.4920   0.3195   0.1601   0.0433
+
+
+
+VARIANCE DECOMPOSITION SIMULATING ONE SHOCK AT A TIME (in percent) (HP filter, lambda = 1600)
+                                 eps_z             eps_g  Tot. lin. contr.
+log(c)                           64.37             33.03             97.40
+log(w)                          101.69              3.30            104.99
+log(r)                          119.00              4.03            123.03
+log(y)                          117.65              4.13            121.78
+log(h)                           97.66             47.14            144.80
+log(k)                           57.36              0.80             58.16
+log(i)                          114.38              0.87            115.25
+log(z)                          116.22              0.00            116.22
+log(g)                            0.00            161.46            161.46
+log(productividad)              101.69              3.30            104.99
+Note: numbers do not add up to 100 due to non-zero correlation of simulated shocks in small samples
+
+
+----------------------------------------------------- 
+ESTADÍSTICAS DE LAS VARIABLES*           
+----------------------------------------------------- 
+                     	      std(x) 	   corr(y,x) 
+c                    	 0.57 (0.06) 	 1.00 (0.00) 
+w                    	 0.74 (0.07) 	 0.76 (0.12) 
+r                    	 1.26 (0.12) 	 0.91 (0.03) 
+y                    	 1.24 (0.12) 	 0.67 (0.12) 
+h                    	 0.60 (0.06) 	 0.57 (0.20) 
+k                    	 0.33 (0.05) 	 0.91 (0.05) 
+i                    	 3.79 (0.36) 	 0.55 (0.18) 
+z                    	 0.90 (0.09) 	 0.91 (0.05) 
+g                    	 2.69 (0.26) 	 0.98 (0.01) 
+productividad        	 0.74 (0.07) 	 0.14 (0.29) 
+----------------------------------------------------- 
+
+------------------------- 
+DESVIACIONES RELATIVAS*                  
+------------------------- 
+std(c)/std(y) 	 0.46 
+std(I)/std(y) 	 3.07 
+std(h)/std(y) 	 0.49 
+std(w)/std(y) 	 0.60 
+std(h)/std(w) 	 0.81 
+corr(h,w)     	 0.76 
+------------------------- 
+
+* Nota:                                  
+----------------------------------------------------- 
+- N° de Simulaciones consideradas: 10000 de 10000 
+- N° de Periodos: 200
+----------------------------------------------------- 
+[Warning: The following error was caught while executing 'onCleanup' class destructor:
+Error using <a href="matlab:matlab.internal.language.introspective.errorDocCallback('getappdata')" style="font-weight:bold">getappdata</a>
+Value must be a handle.
+Error in matlab.graphics.internal.export.exportPreparation
+
+Error in matlab.graphics.internal.export.exportPreparation
+
+Error in matlab.graphics.internal.export.Exporter/postExportCleanup
+
+Error in matlab.graphics.internal.export.Exporter>@()obj.postExportCleanup(pj)
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('onCleanup/delete', 'C:\Program Files\MATLAB\R2022b\toolbox\matlab\general\onCleanup.m', 23)" style="font-weight:bold">onCleanup/delete</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2022b\toolbox\matlab\general\onCleanup.m',23,0)">line 23</a>)
+            obj.task();
+Error in matlab.graphics.internal.export.Exporter/process
+
+Error in matlab.graphics.internal.export.exportTo
+
+Error in exportgraphics
+
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('Gobierno.driver', 'C:\Users\solis\OneDrive\Escritorio\Macro 2\Proyecto Computacional Macroeconomía 2\Códigos matlab\+Gobierno\driver.m', 559)" style="font-weight:bold">Gobierno.driver</a> (<a href="matlab: opentoline('C:\Users\solis\OneDrive\Escritorio\Macro 2\Proyecto Computacional Macroeconomía 2\Códigos matlab\+Gobierno\driver.m',559,0)">line 559</a>)
+exportgraphics(fig_histogram, 'stats_Gobierno.png', 'Resolution', 300);
+Error in <a href="matlab:matlab.internal.language.introspective.errorDocCallback('dynare', 'C:\dynare\6.1\matlab\dynare.m', 310)" style="font-weight:bold">dynare</a> (<a href="matlab: opentoline('C:\dynare\6.1\matlab\dynare.m',310,0)">line 310</a>)
+    evalin('base',[fname '.driver']);] 
